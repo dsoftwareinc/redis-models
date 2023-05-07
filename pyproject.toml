@@ -1,0 +1,46 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "redis-models"
+version = "0.1"
+description = "Redis ORM library that gives redis easy-to-use objects with fields and speeds a development up"
+readme = "README.md"
+keywords = ["redis", "ORM"]
+authors = [
+    "Daniel Moran <daniel@moransoftware.ca>",
+]
+maintainers = [
+    "Daniel Moran <daniel@moransoftware.ca>",
+]
+license = "MIT"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Web Environment',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+]
+homepage = "https://github.com/dsoftwareinc/redis-models"
+documentation = "https://redis-models.readthedocs.io/en/latest/"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/dsoftwareinc/redis-models/issues"
+"Funding" = "https://github.com/sponsors/cunla"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+coverage = "^7"
+fakeredis = "^2.11"
+parameterized = "^0.9"
+Flake8-pyproject = "^1.2"
+
+[tool.flake8]
+max-line-length = 119
