@@ -3,7 +3,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "redis-models"
+name = "django-redis-om"
 version = "0.1"
 description = "Redis ORM library that gives redis easy-to-use objects with fields and speeds a development up"
 readme = "README.md"
@@ -35,12 +35,13 @@ documentation = "https://redis-models.readthedocs.io/en/latest/"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+redis-om = "^0.1"
 
 [tool.poetry.dev-dependencies]
 coverage = "^7"
 fakeredis = "^2.11"
 parameterized = "^0.9"
-Flake8-pyproject = "^1.2"
+Flake8-pyproject = "^1"
 
 [tool.flake8]
 max-line-length = 119
